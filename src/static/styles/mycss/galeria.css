@@ -1,0 +1,120 @@
+.crea {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+}
+.crea Link h3 {
+  margin: 0;
+}
+.galeria-container {
+  margin-top: 10vh;
+  padding: 20px;
+}
+.crea:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #ffffff48;
+  border-radius: 25px;
+}
+.crea-link {
+  color: white !important;
+  margin: 0;
+}
+.crea-link:hover {
+  color: black !important;
+}
+.fondo-blanco {
+  background-color: white;
+}
+.hoover-nft {
+  opacity: 0.85;
+  transition: 0.5s;
+}
+.galery-container {
+  background: linear-gradient(#01b6feb3, #ed12edb3),
+    url("../images/background-synthwave.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hoover-nft:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
+.galeria-elemento {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: #1c1c1c;
+  color: white;
+  border-radius: 5px;
+  background-size: contain;
+  min-height: 25vw;
+  overflow: hidden;
+  padding: 10px;
+}
+.galeria-elemento:hover {
+  cursor: pointer;
+}
+.imagen-elemento {
+  width: 100%;
+  flex: 10 0 auto;
+  position: relative;
+  z-index: 1;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+/*  */
+.info-elemento {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-elemento > * {
+  margin: 0px;
+}
+.price > * {
+  margin: 0px;
+}
+.price h3 {
+  display: flex;
+  align-items: center;
+}
+.price h3 img {
+  height: 1em;
+  margin-left: 5px;
+}
+.user-image-nav {
+  position: relative;
+}
+.profile-submenu {
+  list-style: none;
+  display: flex;
+  top: 130%;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+  .galeria-elemento {
+    min-height: 70vh;
+  }
+}

@@ -1,0 +1,80 @@
+.load {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.load img {
+  width: 100px;
+  height: 100px;
+  animation: loading 10s linear infinite;
+}
+.progress-bar {
+  width: 70vw;
+  height: 50px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: black;
+  overflow: hidden;
+}
+.bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(#01b6fe, #ed12ed);
+  animation: loading 10s linear forwards;
+  transition: all 0.5s;
+  border-radius: 15px;
+}
+.finished {
+  animation: finished 1s;
+  animation-delay: 1s;
+}
+.bar-finished {
+  animation: finished-bar 1s;
+
+  width: 100%;
+}
+@keyframes finished-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes finished {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 40%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 60%;
+  }
+  80% {
+    width: 95%;
+  }
+  100% {
+    width: 99%;
+  }
+}

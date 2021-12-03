@@ -2,19 +2,41 @@ html {
   height: 100%;
   width: 100%;
   /* background-color: #15151E; */
-  background-color: #282c33;
+  /* background-color: #282c33; */
+  background: /*linear-gradient(#01b6feb3, #ed12edb3),*/ url("../images/background-synthwave.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
 }
-
+iframe {
+  opacity: 0.8;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #282c33;
+}
+::-webkit-scrollbar-thumb {
+  background: #81defe;
+  border-radius: 10px;
+  border-width: 1px;
+  border-left: solid;
+  border-left-color: #282c33;
+  border-left-width: 1px;
+  transition: all 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: all 1s;
+  background: #3e28b2;
+}
 a {
-  color: #6A24D3;
+  color: #6a24d3;
   text-decoration: none;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,6 +49,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
